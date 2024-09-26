@@ -16,20 +16,11 @@ public class Triangle {
     }
 
     public boolean isIsosceles(){
-        return ((a == b) || (b == c)) ? true : false;
+        return ((a == b) || (b == c) || (c==a)) ? true : false;
     }
 
     public boolean isEquilateral(){
-        if(b==c){
-            return true;
-        }
-        else if(a==b){
-            return true;
-        }
-        else if(c==a){
-            return true;
-        }
-        else return false;
+        return (a==b&&b==c)? true:false;
     }
 
     public boolean isRightAngeled(){
@@ -50,7 +41,7 @@ public class Triangle {
     }
 
     public double getArea(){
-        
+
         throw new UnsupportedOperationException("This function is not yet implemented");
     }
 }
