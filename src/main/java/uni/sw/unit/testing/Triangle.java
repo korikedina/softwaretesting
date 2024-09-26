@@ -20,11 +20,29 @@ public class Triangle {
     }
 
     public boolean isEquilateral(){
-        throw new UnsupportedOperationException("This function is not yet implemented");
+        if(b==c){
+            return true;
+        }
+        else if(a==b){
+            return true;
+        }
+        else if(c==a){
+            return true;
+        }
+        else return false;
     }
 
     public boolean isRightAngeled(){
-        throw new UnsupportedOperationException("This function is not yet implemented"); 
+        if(a*a+b*b==c*c){
+            return true;
+        }
+        else if(a*a+c*c==b*b){
+            return true;
+        }
+        else if(b*b+c*c==a*a){
+            return true;
+        }
+        else return false;
     }
 
     public int getPerimeter(){
@@ -32,6 +50,7 @@ public class Triangle {
     }
 
     public double getArea(){
+        
         throw new UnsupportedOperationException("This function is not yet implemented");
     }
 }
