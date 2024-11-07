@@ -17,4 +17,12 @@ public class User {
     boolean isLoggedIn(){
         throw new UnsupportedOperationException();
     }
+    public double getAcademicAverage(int semester) {
+        return academicAverage;
+    }
+    public User update(String newPassword, boolean isLoggedIn){
+        
+        return this;
+    }
+    
 }
