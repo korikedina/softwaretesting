@@ -14,8 +14,11 @@ import org.openqa.selenium.support.decorators.WebDriverDecorator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.example.uitest.FormPage;
+
 public class Secondtest {
     WebDriver webDriver;
+    FormPage formpage;
 
     @BeforeEach
     public void beforeTest(){
@@ -50,7 +53,7 @@ public class Secondtest {
         WebElement submitButton1=webDriver.findElement(By.xpath("//*[@id=\"et_pb_contact_form_0\"]/div[2]/form/div/button"));
 
 
-        nameInput.sendKeys("Alga Aladár");
+        formpage.fillNameInput("Alga Aladár");
         msgInput.sendKeys("Kristóf nem tud németül");
         submitButton1.click();
 
