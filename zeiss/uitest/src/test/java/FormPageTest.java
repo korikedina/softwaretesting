@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.example.uitest.FormPage;
 
-public class Secondtest {
+public class FormPageTest {
     WebDriver webDriver;
     FormPage formpage;
 
